@@ -376,3 +376,73 @@ video{
         height: 150px;
     }
 }
+/******************************************************************************************************************************/
+/****************************************************** Footer Here *******************************************************/
+.Contact{
+    height: 80vh;
+    width: 100%;
+    display: inline-block;
+    background-color: black;
+}
+.footerDiv{
+    display: flex;
+    float: right;
+    margin-top: 5%;
+    margin-right: 8%;
+    font-family: 'Open Sans', sans-serif;
+}
+.footerDiv li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footerDiv .l1{
+    font-size: 10px;
+}
+.footerDiv a{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+#smalllogo{
+    float: left;
+    margin-left: 10%;
+    margin-top: 6%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+/****************************************************** Copyright Here *******************************************************/
+
+.copyright{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 14px;
+    margin-top: 40%;
+    margin-left: 10%;
+}
+.div-list2{
+    display: flex;
+    flex-direction: row;
+}
+
+/****************************************************** media query Here *******************************************************/
+
+@media only screen and (max-width: 650px){
+    .footerDiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .copyright{
+        margin-top: 70%;
+    }
+}
+@media only screen and (max-width: 550px){
+    .copyright{
+        margin-top: 80%;
+    }
+}
+@media only screen and (max-width: 450px){
+    .copyright{
+        margin-top: 98%;
+    }
+}
