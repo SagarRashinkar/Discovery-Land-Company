@@ -1,0 +1,212 @@
+body{
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+/********************************************* Navigation Bar ********************************************/
+.topnav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+}
+.logo { 
+    width: 160px;
+    top: 17px;
+    left: 0;
+    z-index: 1;
+}
+.menubar{
+    display: flex;
+    width: 60%;
+    height: 30px;
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.menuNav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+}
+a {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    color: #f1f1f1;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;     
+}
+
+.iconmenu{
+    font-size:30px;
+    cursor:pointer;
+    color: white;
+}
+.iconmenu:hover{
+    color: #f1f1f1;
+}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+} 
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 75px;
+    font-size: 50px;
+}
+/********************************************* Background video Here *********************************************/
+video{
+    max-width: 100%;
+    object-fit: cover;
+}
+/****************************************** Circle movement with mouse *********************************************/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+.circle {
+  z-index: 9999;
+  position: absolute;
+  border: solid 2px white;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  pointer-events: none;
+}
+/****************************************** Body text Here *********************************************/
+.headTxt{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+.d1{
+    font-size: 60px;
+}
+.d2{
+    font-size: 55px;
+}
+/****************************************** Body text Here *********************************************/
+.downBtn{
+    position: fixed;
+    background-color: transparent;
+    top: 500px;
+    left: 85%;
+    right: 85%;
+    width: 80px;
+    height: 80px;
+    font-size: 20;
+    border-radius: 50%;
+    color: white;
+    border-color: white;
+    text-decoration-thickness: 2px solid;
+    outline: none;
+  }
+/****************************************** media query Here *********************************************/
+@media only screen and (max-width: 1200px){
+    video{
+        height: 100vh;
+    }
+}
+@media only screen and (max-width: 900px){
+    .headTxt{
+        top: 35%;
+    }
+    video{
+        height: 100vh;
+    }
+}
+@media only screen and (max-width: 650px){
+    .menubar{
+        display: none;
+    }
+    .topnav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .iconmenu{
+        padding-right: 40px;
+    }
+    .logo{
+        padding-left: 40px;
+    }
+    .d1{
+        font-size: 50px;
+    }
+    .d2{
+        font-size: 45px;
+    }
+    .downBtn{
+        left: 80%;
+        right: 80%;
+        width: 70px;
+        height: 70px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .iconmenu{
+        padding-right: 20px;
+        font-size: 30px;
+    }
+    .logo{
+        padding-left: 20px;
+        width: 110px;
+    }
+    .topnav{
+        height: 70px;
+    }
+    .headTxt{
+        top: 35%;
+    }
+    .d1{
+        font-size: 45px;
+    }
+    .d2{
+        font-size: 40px;
+    }
+    .downBtn{
+        left: 75%;
+        right: 75%;
+        width: 65px;
+        height: 65px;
+    }
+}

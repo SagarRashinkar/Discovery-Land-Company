@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/index.css">
+  <script src="./JS/index.js"></script>
+  <title>Discovery Land Company</title>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <!-- NavigationBar from here -->
+          <div><a href="#home"><img class="logo" src="../Assets/logo.png"></a></div>
+          <div class=" menubar"> 
+            <nav class="menuNav">
+              <a class="nav" href="#about">About DLC</a>
+              <a class="nav" href="#world">Our World</a>
+              <a class="nav" href="#experience">Experiences</a>
+              <a class="nav" href="#gallery">Gallery</a>
+              <a class="nav" href="#press">Press</a> 
+              <a class="nav" href="#contact">Contact</a>
+            </nav>
+          </div>
+        <!-- Top Curtain Menu HamBurger Here -->
+        <div id="myNav" class="overlay">
+          <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+              <a href="#">Magazine</a>
+              <a href="#">Company</a>
+              <a href="#">Foundation</a>
+              <a href="#">Career</a>
+              <a href="#">Contact</a>
+          </div>
+        </div>
+        <!-- Menu Icon Here -->
+        <div class="iconmenu" onclick="openNav()">&#9776;</div>
+    </div>
+    <!-- Circle Here -->
+    <span id="circle" class="circle"></span>
+    <!-- Body background video here -->
+    <div><video autoplay loop muted src="./assets/video1.mp4"></video></div>
+    <!-- body text here -->
+    <div class="headTxt"><div class="d1">Discover</div><div class="d2">Your World</div></div>
+    <button class="downBtn">&#8595;</button>
+    <div class="world">
+        <div class="one">
+            <div class="one-one">
+                <div class="txt">Welcome to <br> our world</div>
+                <p class="para">Discover the unique atmosphere of our private resedential club communities. 
+                    Once experienced. Never forgotten. This is classic, comfortable, modern livin in nature's most 
+                    spectacular settings worldwide. Reassuringly exclusive. Generously welcoming. 
+                    Find your unique world - a place where families love to be; creating unforgottable moments, 
+                    together.
+                </p>
+            </div>
+            <div class="one-two"><img src="./assets/img1.jpg" class="one-img"></div>
+        </div>
+        <div class="two"><img src="./assets/img2.jpg" class="two-img"></div>
+    </div>
+    <div class="explorer">
+      <div class="e-text">
+        <div class="e-div">
+          <div class="e-head"> <div class="e1">Explore</div> <div class="e2">our worlds</div> </div>
+          <p class="e-para">From majesticmountainscapes to beautiful coastlines... <br> 
+            breathtaking worlds to uncover and experiences.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <img src="./assets/img3.jpg" class="scroll-img">
+        <img src="./assets/img4.jpg" class="scroll-img">
+        <img src="./assets/img5.jpg" class="scroll-img">
+        <img src="./assets/img6.jpg" class="scroll-img">
+        <img src="./assets/img7.jpg" class="scroll-img">
+        <img src="./assets/img8.jpg" class="scroll-img">
+        <img src="./assets/img3.jpg" class="scroll-img">
+        <img src="./assets/img4.jpg" class="scroll-img">
+      </div>
+    </div>
+</body>
+</html>
